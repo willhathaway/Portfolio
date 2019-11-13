@@ -1,11 +1,14 @@
 /* basic CSS code taken from the solution file to homework 1 */
 
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap");
+
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  width:100%;
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background-color: #25262A;
 }
 
 * {
@@ -15,6 +18,7 @@ body {
 /* general */
 
 .container {
+  background-color: #25262A;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
@@ -25,26 +29,14 @@ h1,
 h2,
 h3,
 p {
+  font-family: 'Josefin Sans', sans-serif;
   margin-bottom: 20px;
-}
-
-p:last-child {
-  margin-bottom: 0;
-}
-
-h1,
-h2,
-h3 {
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-weight: 700;
-  color: #4aaaa5;
 }
 
 h1 {
   padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #dddddd;
 }
 
 h2,
@@ -54,49 +46,36 @@ h3 {
 
 /* header */
 
-#masthead {
-  position: fixed;
-  z-index: 99;
-  width: 100%;
-  margin: 0 0 30px;
-  overflow: auto;
-  color: #ffffff;
-  background: #ffffff;
-  border-bottom: 2px solid #cccccc;
-}
-
 #logo {
-  float: left;
-  width: 300px;
-  height: 90px;
-  font-family: Georgia, Times, "Times New Roman", serif;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 90px;
-  color: #ffffff;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
-  text-decoration: none;
-  background: #312f35;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 nav {
-  float: right;
-  margin-top: 25px;
+  position: static;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
 }
 
 nav a {
   display: inline-block;
   padding-left: 15px;
+  padding-right: 15px;
   margin-left: 15px;
   line-height: 18px;
-  color: #999;
+  font-weight: bold;
+  color: black;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
   text-decoration: none;
-  border-left: 1px solid #efefef;
+  border: 1px 0 1px 0 solid #efefef
 }
 
-nav a:first-child {
-  border-left: 0 none;
-}
 
 /* footer */
 
@@ -104,36 +83,36 @@ footer {
   padding: 30px 0;
   clear: both;
   font-size: 12px;
-  color: #ffffff;
-  color: #cccccc;
   text-align: center;
   background: #666666;
   border-top: 8px solid #4aaaa5;
   height: 50px;
 }
 
-h3, h2 {
-  padding-bottom: 20px;
-  margin-bottom: 15px;
-  line-height: 22px;
-  border-bottom: 2px solid #eeeeee;
-}
 
 /* main */
 
 #main-container {
-  padding-top: 130px;
   min-height: calc(100vh - 70px);
 }
 
 .main-section {
   float: left;
   width: 100%;
-  max-width: 960px;
   padding: 30px;
   margin: 50px 0 40px;
   background: #ffffff;
   border: 1px solid #dddddd;
+}
+
+/* index page */
+
+.h1-about-me {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
 }
 
 /* portfolio page */
@@ -168,6 +147,15 @@ h3, h2 {
   text-align: center;
   background: #4aaaa5;
   border-bottom: 0;
+}
+
+.h1-portfolio {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+
 }
 
 .auth-image {
@@ -222,7 +210,7 @@ input[type=submit] {
 
 @media only screen and (max-width: 980px) {
   .header-div{
-    background-color: blue;
+    background-color: black;
   }
 }
 
@@ -251,32 +239,8 @@ input[type=submit] {
   nav {
     position: static;
     width:100%;
-    
   }
 
-  #nav-about{
-    text-align: center;
-    float:left;
-    width: 33%;
-    padding: 10px;
-    margin: 0px 0px 10px 0px;
-  }
-
-  #nav-portfolio{
-    text-align: center;
-    float:left;
-    width: 33%;
-    padding: 10px;
-    margin: 0px 0px 10px 0px;
-  }
-
-  #nav-contact{
-    text-align: center;
-    float:left;
-    width: 33%;
-    padding: 10px;
-    margin: 0px 0px 10px 0px;
-  }
 
   .auth-image {
     width: 100%;
@@ -328,3 +292,45 @@ input[type=submit] {
   }
 
 }
+
+/* the magnify background-image code was taken/modified from https://css-tricks.com/zooming-background-images/ */
+
+.parent {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: black; /* fallback color */
+  background-image: url("../images/koi.jpg");
+  background-position: center;
+  background-size: cover;
+  transition: all .5s;
+}
+
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+.bg-one {background-image: url("../images/koi.jpg");}
+

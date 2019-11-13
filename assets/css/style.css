@@ -7,7 +7,6 @@ body {
   width:100%;
   font-size: 18px;
   line-height: 34px;
-  color: #777777;
   background-color: #25262A;
 }
 
@@ -50,9 +49,17 @@ h3 {
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   font-weight: bold;
+  border:0px;
+  font-size: 80px;
   color: white;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
+}
+
+.koi {
+  background-image: url("../images/koi.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 nav {
@@ -66,16 +73,31 @@ nav a {
   display: inline-block;
   padding-left: 15px;
   padding-right: 15px;
+  line-height: 18px;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+  text-decoration: none;
+  border: 1px 0 1px 0 solid #efefef;
+  font-size: large;
+}
+
+nav a:hover {
+  display: inline-block;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: 15px;
   line-height: 18px;
   font-weight: bold;
-  color: black;
+  color: white;
   -webkit-text-stroke-width: 1px;
-   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-color: black;
   text-decoration: none;
-  border: 1px 0 1px 0 solid #efefef
+  border: 1px 0 1px 0 solid #efefef;
+  font-size: 25px;
+  transition: all .2s;
 }
-
 
 /* footer */
 
@@ -84,8 +106,7 @@ footer {
   clear: both;
   font-size: 12px;
   text-align: center;
-  background: #666666;
-  border-top: 8px solid #4aaaa5;
+  background:black;
   height: 50px;
 }
 
@@ -93,14 +114,14 @@ footer {
 /* main */
 
 #main-container {
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh + 100px);
 }
 
 .main-section {
   float: left;
   width: 100%;
   padding: 30px;
-  margin: 50px 0 40px;
+  margin: 20px 0 20px;
   background: #ffffff;
   border: 1px solid #dddddd;
 }
@@ -120,7 +141,7 @@ footer {
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 35%;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -131,6 +152,7 @@ footer {
 
 .work img {
   width: 100%;
+  height: 300px;
   border: 0 none;
   opacity: 0.8;
 }
@@ -155,7 +177,6 @@ footer {
   color: white;
   -webkit-text-stroke-width: 1px;
    -webkit-text-stroke-color: black;
-
 }
 
 .auth-image {
@@ -167,6 +188,14 @@ footer {
 }
 
 /* contact page */
+
+.h1-contact {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: black;
+}
 
 #contact-form ul {
   margin-bottom: 20px;
@@ -295,7 +324,7 @@ input[type=submit] {
 
 /* the magnify background-image code was taken/modified from https://css-tricks.com/zooming-background-images/ */
 
-.parent {
+/* .parent {
   width: 100%;
   height: 300px;
   overflow: hidden;
@@ -310,7 +339,7 @@ input[type=submit] {
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: black; /* fallback color */
+  background-color: black; 
   background-image: url("../images/koi.jpg");
   background-position: center;
   background-size: cover;
@@ -332,5 +361,5 @@ input[type=submit] {
   display: block;
 }
 
-.bg-one {background-image: url("../images/koi.jpg");}
+.bg-one {background-image: url("../images/koi.jpg");} */
 

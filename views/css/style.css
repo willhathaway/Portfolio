@@ -44,6 +44,10 @@ h3 {
     font-size: 22px;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .koi {
     background-image: url("../images/koi.jpg");
     background-size: 100%;
@@ -78,6 +82,16 @@ nav a:hover {
     transition: all .5s;
     color: white;
 }
+
+#logo {
+    font-family: 'Megrim', cursive;
+    letter-spacing: 20px;
+    color: white;
+    opacity: 1;
+    text-align: center;
+    text-indent: 20px;
+}
+
 
 /* footer */
 
@@ -264,6 +278,17 @@ input[type=submit] {
     margin-left: 25px;
 }
 
+#formDiv {
+    width: 50%;
+    float: left;
+}
+
+#contactLinks {
+    float:right;
+    width: 25%;
+    text-align: right;
+}
+
 /* ===================================================================================
 ===================================================================================
 ===================================================================================
@@ -303,6 +328,32 @@ input[type=submit] {
         transition: none !important;
     }
 
+    #formDiv {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #submitBtn {
+        width: 100%;
+        margin: 0;
+    }
+
+    #contactLinks {
+        float: left;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #contactLinks a {
+        font-size: 20px;
+    }
+
+    .h1-portfolio {
+        margin-top: 30px;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -312,10 +363,6 @@ input[type=submit] {
         height: 100px;
         margin-top: 10px;
         margin-right: 25px;
-    }
-
-    .work img {
-        display: none;
     }
 
 }
@@ -373,13 +420,6 @@ input[type=submit] {
         font-size: small;
     }
 
-    /* taken from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_unordered_none */
-
-    ul {
-        list-style-type: none;
-        float: left;
-    }
-
     label {
         font-weight: 100;
         font-size: 12px;
@@ -388,6 +428,16 @@ input[type=submit] {
     p {
         font-weight: 100;
         font-size: 12px;
+    }
+
+    #logo {
+        letter-spacing: 3px;
+    }
+    
+    #formDiv {
+        width: 100%;
+        justify-content: center;
+        text-align: center;
     }
 
 }

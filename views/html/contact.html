@@ -21,7 +21,7 @@
         <div class="jumbotron logo koi">
             <div id="bar">
                 <a href='index.html'>
-                    <div class="animate" id="divPrime"></div>
+                    <h4 id="logo">WILDWAY</h4>
                 </a>
                 <div id="nav-buttons">
                     <nav>
@@ -37,26 +37,54 @@
 
     <div id="main-container" class="container">
         <section class="main-section">
-            <h1 class="h1-contact">Contact</h1>
+            <div id="formDiv">
+                <h1 class="h1-contact">Contact</h1>
 
-            <form id="contact-form">
-                <ul>
-                    <li>
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                    </li>
-                    <li>
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                    </li>
-                    <li>
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required="required"></textarea>
-                    </li>
-                </ul>
+                <form id="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="name" required="required">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                                required="required">
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        </li>
+                    </ul>
+                    <br>
+                    <input class="btn btn-dark" type="submit" id="submitBtn">
+                </form>
+            </div>
+
+            <div id="contactLinks">
+                <h1 class="h1-portfolio">Links</h1>
+
+                <a href="https://www.linkedin.com/in/william-hathaway-731b7a190/" target="_blank">
+                    <h3>LinkedIn</h3>
+                </a>
                 <br>
-                <input class="btn btn-dark" type="submit" id="submitBtn">
-            </form>
+
+                <a href="https://github.com/willhathaway" target="_blank">
+                    <h3>GitHub</h3>
+                </a>
+                <br>
+
+                <a href="" target="_blank">
+                    <h3>Resume PDF</h3>
+                </a>
+                <br>
+
+                <a href="https://www.instagram.com/wildwayart/" target="_blank">
+                    <h3>Art Portfolio</h3>
+                </a>
+                <br>
+
+            </div>
 
         </section>
 

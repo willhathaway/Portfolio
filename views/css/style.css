@@ -226,6 +226,7 @@ footer {
 
 #contact-form li {
     margin-bottom: 10px;
+    width: 100%;
 }
 
 label,
@@ -258,6 +259,11 @@ input[type=submit] {
     border: 0 none;
 }
 
+#submitBtn {
+    float: left;
+    margin-left: 25px;
+}
+
 /* ===================================================================================
 ===================================================================================
 ===================================================================================
@@ -287,6 +293,16 @@ input[type=submit] {
         display: none;
     }
 
+    #divPrime {
+        display: none;
+        animation: none;
+        -webkit-transition: none !important;
+        -moz-transition: none !important;
+        -o-transition: none !important;
+        -ms-transition: none !important;
+        transition: none !important;
+    }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -300,16 +316,6 @@ input[type=submit] {
 
     .work img {
         display: none;
-    }
-
-    .nw, .ww {
-        animation: none;
-        width: 600px;
-        -webkit-transition: none !important;
-        -moz-transition: none !important;
-        -o-transition: none !important;
-        -ms-transition: none !important;
-        transition: none !important;
     }
 
 }
@@ -426,6 +432,7 @@ input[type=submit] {
 .nw {
     animation: rise 5s forwards;
     animation-timing-function: ease;
+    animation-delay: 1s;
 
 }
 
@@ -446,6 +453,7 @@ input[type=submit] {
 #div3 {
     animation: unify1 5s forwards;
     animation-timing-function: ease;
+    animation-delay: 1s;
 }
 
 @keyframes unify1 {
@@ -461,6 +469,7 @@ input[type=submit] {
 #div9 {
     animation: unify2 5s forwards;
     animation-timing-function: ease;
+    animation-delay: 1s;
 }
 
 @keyframes unify2 {
@@ -478,6 +487,7 @@ input[type=submit] {
 #div23 {
     animation: unify3 5s forwards;
     animation-timing-function: ease;
+    animation-delay: 1s;
 }
 
 @keyframes unify3 {

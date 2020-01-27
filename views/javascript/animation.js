@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    console.log("hello");
+    console.log("animation loaded");
 
     let name = "william daniel hathaway";
 

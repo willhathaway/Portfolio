@@ -229,7 +229,6 @@ footer {
 .h1-portfolio {
     font-family: 'Josefin Sans', sans-serif;
     width: 100%;
-    display: inline-block;
     font-weight: bold;
     color: white;
     -webkit-text-stroke-width: 1px;
@@ -239,41 +238,44 @@ footer {
 #readme {
     opacity: 0;
     position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
     transition: all 0.4s ease-in-out 0s;
     color: white;
     font-weight: 900;
 }
 
-#project1:hover  #readme {
+#project1:hover #readme {
     opacity: 1;
 }
 
-#project2:hover  #readme {
+#project2:hover #readme {
     opacity: 1;
 }
 
-#project3:hover  #readme {
+#project3:hover #readme {
     opacity: 1;
 }
-#project4:hover  #readme {
+
+#project4:hover #readme {
     opacity: 1;
 }
-#project5:hover  #readme {
+
+#project5:hover #readme {
     opacity: 1;
 }
-#project6:hover  #readme {
+
+#project6:hover #readme {
     opacity: 1;
 }
 
@@ -340,7 +342,7 @@ input[type=submit] {
 }
 
 .contactLinks {
-    float:right;
+    float: right;
     width: 25%;
     text-align: right;
 }
@@ -365,13 +367,18 @@ input[type=submit] {
 
     .work {
         float: left;
-        width: 100%;
+        width: 75%;
         height: 100px;
         margin-top: 10px;
         margin-right: 25px;
+        overflow: hidden;
     }
 
     .work img {
+        display: none;
+    }
+
+    #readme {
         display: none;
     }
 
@@ -413,7 +420,7 @@ input[type=submit] {
 
     .h1-portfolio {
         margin-top: 30px;
-        width: 75%;
+        width: 100%;
     }
 
 
@@ -421,13 +428,64 @@ input[type=submit] {
 }
 
 @media only screen and (max-width: 768px) {
-    .work {
+
+    .contactLinks, .projects {
         float: left;
         width: 100%;
-        height: 100px;
+    }
+
+    .work {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        bottom: 20px;
+        margin-bottom: 0;
+        color: white;
+        text-align: center;
+      
+    }
+
+    .work:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .work h3 {
+        color: white;
+        height: 50%;
+        background-color: black;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+
+    .h1-portfolio {
+        font-weight: bolder;
+        font-weight: 50;
+        text-align: center;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
+    }
+
+
+    .contactLinks a {
+        float: left;
+        width: 100%;
+        height: 50%;
         margin-top: 10px;
         margin-right: 25px;
+        background-color: black;
+        bottom: 20px;
+        padding: 15px;
+        margin-bottom: 0;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        border-bottom: 0;
+        color: white;
     }
+
 
 }
 
@@ -458,11 +516,7 @@ input[type=submit] {
         text-align: center;
     }
 
-    .h1-portfolio {
-        font-size: 20px;
-        font-weight: 50;
-        text-align: center;
-    }
+
 
     .h1-contact {
         font-size: 20px;
@@ -472,17 +526,6 @@ input[type=submit] {
 
     /* makes the portfolio images centered, adjusting to screen width */
 
-    .work img {
-        float: left;
-        width: 100%;
-        height: 50%;
-        margin-top: 10px;
-        margin-right: 25px;
-    }
-
-    .work h3 {
-        font-size: small;
-    }
 
     label {
         font-weight: 100;
@@ -497,7 +540,7 @@ input[type=submit] {
     #logo {
         letter-spacing: 3px;
     }
-    
+
     #formDiv {
         width: 100%;
         justify-content: center;
@@ -540,7 +583,7 @@ input[type=submit] {
     float: left;
     height: 100px;
     position: relative;
-    z-index:1;
+    z-index: 1;
 }
 
 .nw {

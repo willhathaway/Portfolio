@@ -423,9 +423,34 @@ input[type=submit] {
         width: 100%;
     }
 
-
     .contactLinks {
-        display: none;
+        float: left;
+        width: 100%;
+    }
+
+    .contactLinks a {
+        float: left;
+        width: 100%;
+        height: 50%;
+        margin-top: 10px;
+        margin-right: 25px;
+        background-color: black;
+        bottom: 20px;
+        padding: 15px;
+        margin-bottom: 0;
+        font-weight: 300;
+        line-height: 30px;
+        text-align: center;
+        border-bottom: 0;
+        color: white;
+    }
+
+    .h1-portfolio {
+        font-weight: bolder;
+        font-weight: 50;
+        text-align: center;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;
     }
 
 
@@ -466,31 +491,7 @@ input[type=submit] {
         display: none;
     }
 
-    .h1-portfolio {
-        font-weight: bolder;
-        font-weight: 50;
-        text-align: center;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: black;
-    }
 
-
-    .contactLinks a {
-        float: left;
-        width: 100%;
-        height: 50%;
-        margin-top: 10px;
-        margin-right: 25px;
-        background-color: black;
-        bottom: 20px;
-        padding: 15px;
-        margin-bottom: 0;
-        font-weight: 300;
-        line-height: 30px;
-        text-align: center;
-        border-bottom: 0;
-        color: white;
-    }
 
 
 }
